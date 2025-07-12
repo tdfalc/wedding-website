@@ -1,7 +1,3 @@
-title: My Jekyll Site
-description: >- # this means to ignore newlines until "baseurl:"
-  A simple Jekyll site
-baseurl: "" # Adjust if deploying under a subpath
 url: "https://gridstream.co.uk"
 
 # exclude: _raw
