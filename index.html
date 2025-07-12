@@ -1,0 +1,56 @@
+---
+layout: default
+title: Home
+---
+
+
+<article id="article-home">
+  <header>
+    <h1>Haven't you heard????</h1>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;700&family=Sacramento&display=swap"
+      rel="stylesheet">
+
+  </header>
+  <!-- Centered Headings -->
+  <h3>MORVEN & TOM</h3>
+
+  <div id="slideshow">
+    <img src="img/slideshow-00.jpg">
+    <!-- <img src="img/slideshow-01.jpg">
+    <img src="img/slideshow-02.jpg">
+    <img src="img/slideshow-03.jpg">
+    <img src="img/slideshow-04.jpg">
+    <img src="img/slideshow-05.jpg">
+    <img src="img/slideshow-06.jpg">
+    <img src="img/slideshow-07.jpg">
+    <img src="img/slideshow-08.jpg">
+    <img src="img/slideshow-09.jpg">
+    <img src="img/slideshow-10.jpg">
+    <img src="img/slideshow-11.jpg">
+    <img src="img/slideshow-12.jpg">
+    <img src="img/slideshow-13.jpg">
+    <img src="img/slideshow-14.jpg">
+    <img src="img/slideshow-15.jpg">
+    <img src="img/slideshow-16.jpg">
+    <img src="img/slideshow-17.jpg">
+    <img src="img/slideshow-18.jpg"> -->
+  </div>
+  <div id="slideshow-nav"></div>
+  <!-- <img src="img/header-home-2.png"> -->
+
+
+  <h3>JUNE 6, 2026</h3>
+
+  <script>
+    $(function () {
+      $('#slideshow').cycle({
+        pager: '#slideshow-nav',
+        pagerAnchorBuilder: function (index, domElement) {
+          return '<a href="#">&bull;</a>';
+        }
+      });
+    });
+  </script>
+
+</article>

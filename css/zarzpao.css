@@ -1,0 +1,283 @@
+/* Colors:
+ * charcoal: #5a5a62
+ * gravel:   989281
+ * rose:     eea6b0
+ * peach:    ffe5b9
+ * blossom:  fcd6cf
+ */
+
+/* A rudimentary "reset" */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make HTML 5 elements block level */
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* debug coloring */
+#container {
+  /*background: #fee;*/
+}
+
+html {
+  background: #d8d8d8;
+  font-family: "museo-sans-1", "museo-sans-2", Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  /* background: url(../img/monet.jpeg); */
+  background: url(../img/monet.jpg) no-repeat center center;
+  background-size: cover;
+  /* or use 'contain' if you want the whole image to be visible */
+}
+
+body {}
+
+#container {
+  width: 840px;
+  margin: 30px auto 10px auto;
+  background: #fff;
+  /* shadows make it a little less harsh */
+  -moz-box-shadow: 0px 0px 15px #666;
+  -webkit-box-shadow: 0px 0px 15px #666;
+  box-shadow: 0px 0px 15px #666;
+  /* curve the top for some sexyness */
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #989281;
+  border-bottom: 1px dotted #989281;
+}
+
+a:hover {
+  color: #5a5a62;
+  border-bottom: 1px dotted #5a5a62;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* The actual content... it's not really an article per se, but whatever */
+article {
+  /*padding: 0 10px 10px 10px;*/
+  padding: 20px 20px 0 20px;
+}
+
+article header {
+  width: 400px;
+  height: 600px;
+  float: left;
+}
+
+article div {
+  float: right;
+  width: 400px;
+  margin-top: 20px;
+}
+
+article header h1 {
+  text-indent: -10000px
+}
+
+/* specific headers images */
+article#article-funfacts header {
+  background: url(../img/header-funfacts.png);
+}
+
+article#article-wedding header {
+  background: url(../img/header-wedding.png);
+}
+
+article#article-travel header {
+  background: url(../img/header-travel.png);
+}
+
+article#article-hotels header {
+  background: url(../img/header-hotels.png);
+}
+
+article#article-stuff header {
+  background: url(../img/header-stuff.png);
+}
+
+article#article-registry header {
+  background: url(../img/header-registry.png);
+}
+
+article#article-rsvp header {
+  background: url(../img/header-rsvp.png);
+}
+
+article#article-home header {
+  float: none;
+  /* height: 100px;
+  width: 800px; */
+  height: 1px;
+  width: 800px;
+  /* background: url(../img/header-home.png); */
+}
+
+
+/* Style for "July, 2026" */
+article#article-home h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  font-weight: normal;
+  margin: 5px 0 0;
+  text-align: center;
+  color: #888888;
+  margin-bottom: 10px;
+  /* Adds spacing below h2 */
+
+  /* Medium Gray */
+}
+
+/* XXXzpao Add specific styles for each page */
+
+article h2,
+article h3 {
+  font-family: "rooney-web-1", "rooney-web-2", Georgia, "sans-serif";
+  font-weight: 300;
+  /*text-transform: uppercase;*/
+  margin-bottom: .25em;
+  color: #333;
+}
+
+article h2 {
+  font-size: 18px;
+  text-indent: -10px;
+}
+
+article h3 {
+  font-size: 15px;
+}
+
+article p,
+ul,
+ol {
+  margin-bottom: 1em;
+}
+
+article ul,
+ol {
+  padding-left: 40px;
+}
+
+article ul li {
+  list-style: none;
+}
+
+article ul li+li {
+  margin-top: 2px;
+}
+
+article p+h2,
+article ul+h2 {
+  margin-top: 1.5em;
+}
+
+article p+h3,
+article ul+h3 {
+  margin-top: 1em;
+}
+
+/* Navigating the ol' dusty trail */
+nav {
+  clear: both;
+  font-family: "museo-sans-1", "museo-sans-2", Futura, Calibri, 'Lucida Sans Unicode', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fcd6cf;
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+}
+
+nav a {
+  color: #333;
+  color: #989281;
+  text-decoration: none;
+  margin: 0 12px;
+  border: none;
+}
+
+nav a.current,
+nav a:hover {
+  color: #5a5a62;
+  border: none;
+}
+
+/* footer? i barely know her */
+footer {
+  clear: both;
+}
+
+/* In case we bring those header images back...
+h2 {
+  text-indent: -10000px;
+  height: 36px;
+}
+#h2-travel-california {
+  background: url(../img/h2-travel-california.png);
+}
+#h2-travel-around {
+  background: url(../img/h2-travel-around.png);
+}
+#h2-wedding-big-day {
+  background: url(../img/h2-wedding-big-day.png);
+}
+#h2-wedding-weekend {
+  background: url(../img/h2-wedding-weekend.png);
+}
+#h2-hotels-los-gatos {
+  background: url(../img/h2-hotels-los-gatos.png);
+}
+#h2-hotels-santa-cruz {
+  background: url(../img/h2-hotels-santa-cruz.png);
+}
+#h2-hotels-san-francisco {
+  background: url(../img/h2-hotels-san-francisco.png);
+}
+#h2-stuff-around {
+  background: url(../img/h2-stuff-around.png);
+}
+#h2-stuff-elsewhere {
+  background: url(../img/h2-stuff-elsewhere.png);
+}
+*/
+/*** PAGE SPECIFIC ***/
+
+/* Home */
+#slideshow,
+#slideshow-nav {
+  float: none;
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+#slideshow-nav a {
+  color: #999;
+  border-bottom: none;
+  font-size: 10px;
+  margin: 3px;
+}
+
+#slideshow-nav a.activeSlide {
+  color: #666;
+}
